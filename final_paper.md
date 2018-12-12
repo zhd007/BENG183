@@ -1,4 +1,3 @@
-
 # ChIP Sequencing 
 ## History of ChIP Sequencing
 ChIP-Seq was originally invented by Dr. Keji Zhao in 2007. At the time, there were at least three separate groups new techniques for genome-wide protein binding assay, and there was a race among the three groups.  Dr. Zhao’s team first completed the development of this next generation sequencing based technique and submitted their work to journal.
@@ -20,6 +19,7 @@ The raw data of ChIP-Seq are in reads stored in fastq format. In the fastq file,
 ## Downstream analysis and peak calling
 After aligning reads of DNA fragments to a reference genome, we can perform peak calling to identify binding sites of our target protein. The idea behind is that since we only select for and sequence DNA regions where our target proteins were fixed at, only regions on the reference genome where reads are enriched at can by binding site of our target protein. We can also visualize the alignment result of our reads on genome browsers like Ensemble Genome Browser, UCSC Genome Browser and IGV. The regions enriched with our reads will look like peaks on a genome browser, and this is why the method of identifying target protein binding in ChIP-Seq is called peak calling. After peaking calling, we can further utilize the reads to discover protein binding motifs or correlate with SNP data to find allele specific bindings.
 ## Understanding visualization of ChIP-Seq data on genome browsers
+![chip-seq_visualizarion](chip-seq_visualizarion)
 ### Background noise
 They tiny peaks on the genome browser are background noise which is unlikely to be binding site of our target protein. Two things may cause background noise:
 1. Mapping algorithm may map reads with low quality to wrong place.
